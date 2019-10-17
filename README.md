@@ -11,8 +11,7 @@ git clone https://github.com/jeeftor/SpringBoot-Dynamic-JarLoad.git
 cd SpringBoot-Dynamic-JarLoad
 ./run.sh
 ```
-[![asciicast](https://asciinema.org/a/5KdqBxnFZgo7ZHyfmfvJaty74.svg)](https://asciinema.org/a/5KdqBxnFZgo7ZHyfmfvJaty74?loop=1&autoplay=1)
-
+![demo](docs/demo.gif)
 ### Overview
 
 ![](docs/SystemAdapaterStructure.png)
