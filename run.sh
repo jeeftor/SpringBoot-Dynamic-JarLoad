@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Build the app
-gradle :app:bootJar
+./gradlew :app:bootJar
 
 # Build the Library
 cd defaultImplementation
-gradle jar
+./gradlew jar
 cd ..
 
 cd foodAdapters
-gradle jar
+./gradlew jar
 cd ..
 
 # Run normal mode
