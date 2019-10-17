@@ -7,6 +7,8 @@ This project demonstrates how you can use SpringBoot to dynamically at run-time 
 
 ```
 # Compile and run with gradle wrapper
+git clone https://github.com/jeeftor/SpringBoot-Dynamic-JarLoad.git
+cd SpringBoot-Dynamic-JarLoad
 ./run.sh
 ```
 
