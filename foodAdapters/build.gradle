@@ -2,6 +2,9 @@ plugins {
 	id 'org.springframework.boot' version '2.2.0.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
+	id "org.jetbrains.kotlin.jvm" version "1.3.50"
+	id "org.jetbrains.kotlin.plugin.spring" version "1.3.41"
+
 }
 
 group = 'com.example'
@@ -18,7 +21,21 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	implementation files('../commons/build/libs/commons-0.0.1-SNAPSHOT.jar')
+	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 
+}
+
+sourceCompatibility = 1.8
+
+compileKotlin {
+	kotlinOptions {
+		jvmTarget = "1.8"
+	}
+}
+compileTestKotlin {
+	kotlinOptions {
+		jvmTarget = "1.8"
+	}
 }
 
 test {
